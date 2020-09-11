@@ -1,12 +1,89 @@
 :root {
-  font: 16px / 1 sans-serif;
+  font: 16px / 1 open sans;
 }
 
 html {
   height: 100%;
+  background-color: #fcfcfc;
 }
 
 body {
   margin: 0;
   min-height: 100%;
+}
+
+header {
+  background-color: #efd67c;
+  text-align: center;
+}
+
+header p {
+  max-width: 45rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0.85rem;
+  padding-bottom: 2.23rem;
+  line-height: 1.75rem;
+  color: #333333;
+}
+
+h1 {
+  padding-top: 2rem;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 900;
+  color: #191919;
+}
+
+main {
+  max-width: 60rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1.5rem;
+  font-family: Noto Serif JP;
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+  color: #333333;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 2.5rem;
+}
+
+main :first-child {
+  grid-column: span 2;
+}
+
+h2 {
+  margin-bottom: 0rem;
+}
+
+p {
+  margin-top: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+a {
+  font-family: open sans;
+  text-transform: uppercase;
+  font-weight: bolder;
+  color: #333333;
+  text-underline-offset: 0.75rem;
+}
+footer {
+  margin-top: 5rem;
+  padding: 1.8rem;
+  background-color: #efd67c;
+  color: #333333;
+  display: flex;
+  justify-content: center;
+}
+
+svg {
+  height: 0.9rem;
+}
+
+path {
+  fill: #333333;
 }
